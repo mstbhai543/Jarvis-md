@@ -311,7 +311,7 @@ System({
   const rtype = match ? match.toLowerCase() : '';
   if (!rmap.hasOwnProperty(rtype)) return await message.reply('*Need rotation type.*\n_Example: .rotate left, right, vertical, or horizontal_');
   const option = rmap[rtype];
-  const url = await makeUrl(await message.reply_message.downloadAndSave());
+  const url = await makeUrl(await message.reply_message.downloadAndSave(), { 'User-Agent': 'Jarvis' });
   await message.sendFromUrl(IronMan(`ironman/convert/rotate?image=${url}&option=${option}`));
 });
 
