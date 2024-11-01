@@ -48,7 +48,7 @@ module.exports = {
   GOODBYE_MSG: process.env.GOODBYE_MSG || "false",
   MEDIA_DATA: process.env.MEDIA_DATA|| 'ʟɪꜱᴛ ᴍᴇɴᴜ;ᴊᴀʀᴠɪꜱ-ᴍᴅ;https://graph.org/file/58ea74675af7836579a3a.jpg',
   MENU_FONT: process.env.MENU_FONT || "0;0",
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '923239950046',
   STARTING_MSG: toBool(process.env.STARTING_MSG) || true,
   LOG_MSG: toBool(process.env.LOG_MSG) || true,
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || '',
